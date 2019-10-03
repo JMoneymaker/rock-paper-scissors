@@ -13,12 +13,32 @@
 
     <div class="flex-container">
         <div class="game-play">
-            <h1>Play Paper-Rock-Scissors</h1>
+            <h1>Rock-Paper-Scissors</h1>
 
             <div class="choose-one">
-                <img src="rock-19421_1280.png" alt="rock" width="75px" height="100px">
-                <img src="paper-68833_1280.png" alt="paper" width="75px" height="100px">
-                <img src="scissors-1297454_1280.png" alt="scissors" width="75px" height="100px">
+            <label>
+                <!--Rock-->
+                <input name="rps" value="rock" type="radio"/>
+                <img class="radio-image" src="rock-19421_1280.png" alt="rock" width="75px" height="100px">
+            </label>
+            <label>
+                <!--Paper-->
+                <input name="rps" value="paper" type="radio"/>
+                <img class="radio-image" src="paper-68833_1280.png" alt="paper" width="75px" height="100px">
+            </label>
+            <label>
+                <!--Scissors-->
+                <input name="rps" value="scissors" type="radio"/>
+                <img class="radio-image" src="scissors-1297454_1280.png" alt="scissors" width="75px" height="100px">
+            </label>
+            </div>
+
+            <div class="buttons">
+                <button id="play-button">Break!</button>
+                <br>
+                <br>
+                <br>
+                <button id="play-again-button">Play again</button>
             </div>
 
 
@@ -28,10 +48,22 @@
         <div class="game-results">
             <h1>Game Results</h1>
 
+            The computer threw:
+
+        <div class="game-stats">
+            <h2>Game Stats:</h2>
+            Wins:
+            Losses:
+            Draws:
         </div>
+
+        </div>
+
+
     </div>
 
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="get-random-throw.js"></script>
 </body>
 
 </html>

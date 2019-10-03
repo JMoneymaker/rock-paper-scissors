@@ -22,3 +22,21 @@
     align-content: space-around;
     padding: 50px;
 }
+
+.radio-image {
+    border: 5px solid transparent;
+    width: 75px;
+    height: 100px
+}
+
+input:checked + .radio-image {
+    border: 5px solid #F5F4E9;
+}
+
+input {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
