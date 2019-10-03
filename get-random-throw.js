@@ -1,4 +1,5 @@
-const getComputerChoice () => {
+
+export const getComputerChoice = () => {
 
     const randomNumber = Math.floor(Math.random() * 3); 
     switch (randomNumber) {
@@ -9,20 +10,36 @@ const getComputerChoice () => {
         case 2:
             return 'scissors';
         default:
-            return  'Error';
+            return 'Error';
     }
-}
+};
 
-const checkResult = (userChoice, computerChoice) => {
+export const checkResult = (userChoice, computerChoice) => {
     if (userChoice === computerChoice) {
         return 'draw';
     }
 
     if (userChoice === 'rock') {
         if (computerChoice === 'paper') {
-            return 'lose'
+            return 'lose';
         } else {
-            return 'win'
+            return 'win';
         }
     }
-}
+
+    if (userChoice === 'paper') {
+        if (computerChoice === 'scissors') {
+            return 'lose';
+        } else {
+            return 'win';
+        }
+    }
+
+    if (userChoice === 'scissors') {
+        if (computerChoice === 'rock') {
+            return 'lose';
+        } else {
+            return 'win';
+        }
+    }
+};
