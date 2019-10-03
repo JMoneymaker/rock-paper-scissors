@@ -28,6 +28,12 @@ const displayGameStats = () => {
     drawsSpan.textcontent = draws;
 };
 
+const resultsDisplay = (results) => {
+    if (results = 'win') {
+        return "You won!";
+   }
+}
+
 // make changes to state and dom
 
 // add event listeners
@@ -37,8 +43,6 @@ playButton.addEventListener('click', () => {
     const computerChoice = getComputerChoice();
     const results = checkResult(userChoice, computerChoice);
 
-    if (results) => {
-         results = "You won!";
-    }
+    
 }); 
 
