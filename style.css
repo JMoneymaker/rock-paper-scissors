@@ -1,0 +1,24 @@
+.flex-container {
+    display: flex;
+    height: 500px;
+    text-align: center;
+}
+
+.game-play {
+    width: 60%;
+    background-color: #61787D;
+    color: #F5F4E9;
+    border: 2px solid #AEAC9B;
+}
+
+.game-results {
+    width: 40%;
+    background-color: #3C312B;
+    color: #C2C7AE;
+    border: 2px solid #AEAC9B;
+}
+
+.choose-one {
+    align-content: space-around;
+    padding: 50px;
+}
