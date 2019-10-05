@@ -35,13 +35,13 @@ playButton.addEventListener('click', () => {
     
     if (matchResults === 'win') {
         setWinLossStatement.textContent = 'You\'re the G.D. winner!';
-        winsSpan.textContent += 1;
+        winsSpan.textContent = totalWins += 1;
     } else if (matchResults === 'lose') {
         setWinLossStatement.textContent = 'You\'re the G.D. loser!';
-        lossesSpan.textContent += 1;
+        lossesSpan.textContent = totalLosses += 1;
     } else {
         setWinLossStatement.textContent = 'It was a G.D. draw!';
-        drawsSpan.textContent += 1;
+        drawsSpan.textContent = totalDraws += 1;
     }
     
     
