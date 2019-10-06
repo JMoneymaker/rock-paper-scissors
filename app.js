@@ -6,7 +6,6 @@ import { checkResult } from './get-random-throw.js';
 // initialize/fetch DOM elements
 
 const playButton = document.getElementById('play-button');
-const resetButton = document.getElementById('reset-button');
 const winsSpan = document.getElementById('wins');
 const lossesSpan = document.getElementById('losses');
 const drawsSpan = document.getElementById('draws');
@@ -30,15 +29,16 @@ playButton.addEventListener('click', () => {
     setWinLossStatement.textContent = matchResults;
     computerChoiceSpan.textContent = computerChoice;
     userThrowSpan.textContent = userChoice;
+
     
     if (matchResults === 'win') {
-        setWinLossStatement.textContent = 'You\'re the G.D. winner!';
+        setWinLossStatement.textContent = 'You won!';
         winsSpan.textContent = totalWins += 1;
     } else if (matchResults === 'lose') {
-        setWinLossStatement.textContent = 'You\'re the G.D. loser!';
+        setWinLossStatement.textContent = 'You lost!';
         lossesSpan.textContent = totalLosses += 1;
     } else {
-        setWinLossStatement.textContent = 'It was a G.D. draw!';
+        setWinLossStatement.textContent = 'It was a draw!';
         drawsSpan.textContent = totalDraws += 1;
     }
     
