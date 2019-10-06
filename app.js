@@ -42,26 +42,5 @@ playButton.addEventListener('click', () => {
         drawsSpan.textContent = totalDraws += 1;
     }
     
-    
-    // conditional statement checking results and changing text content of a the setWinLossStatement span depening on game result. Move 47 into each condition of the conditional statment.
-    
 });
-// make changes to state and dom
 
-/* const runMatch = () => {
-    const displayGameStats = () => {
-        winsSpan.textContent = wins;
-        lossesSpan.textContent = losses;
-        drawsSpan.textcontent = draws;
-    const radioButtonValue = document.querySelector('input:checked');
-    const userChoice = radioButtonValue.value;
-    const gameResults = checkResult(userChoice, computerChoice);
-    gameStats(userChoice, computerChoice, gameResults);
-    setWinLossStatement(gameResults);
-    */
-   
-   // add event listeners
-   
-   
-   //define DOM utility function
-   
